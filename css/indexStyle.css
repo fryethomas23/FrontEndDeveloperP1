@@ -1,0 +1,44 @@
+.topLayout{
+    display: grid;
+    grid-template-rows: 100px 1000px 100px;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas: 
+        "hd hd hd"
+        "sd bd bd"
+        "ft ft ft";
+}
+
+.header{
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sideBar{
+    grid-area: sd;
+}
+
+.body{
+    grid-area: bd;
+    padding: 5px;
+}
+
+.footer{
+    grid-area: ft;
+    color: blue
+}
+
+.box{
+    border: 2px solid red;
+}
+
+#logo{
+    max-height: 100%;
+    max-width: auto;
+}
+
+p {
+    font-size: 20px;
+    white-space: pre-line;
+}
