@@ -1,0 +1,11 @@
+#header {
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+    max-height: 100%; 
+    max-width: auto;
+}

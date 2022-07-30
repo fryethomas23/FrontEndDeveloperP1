@@ -1,0 +1,100 @@
+@import "header.css";
+@import "footer.css";
+@import "elements.css";
+
+#topLayout{
+    display: grid;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "hd"
+        "sd"
+        "bd"
+        "ft";
+}
+
+@media (min-width: 600px) {
+    #topLayout{
+        display: grid;
+        grid-template-rows: 100px auto 100px;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-areas: 
+            "hd hd hd"
+            "sd bd bd"
+            "ft ft ft";
+    }
+}
+
+#sideBar {
+    grid-area: sd;
+}
+
+#body {
+    grid-area: bd;
+    padding: 5px;
+}
+
+#img1Container {
+    grid-area: p1;
+}
+
+#img2Container {
+    grid-area: p2;
+}
+
+#img3Container {
+    grid-area: p3;
+}
+
+#img4Container {
+    grid-area: p4;
+}
+
+.photosGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "p1"
+        "p2"
+        "p3"
+        "p4";
+    justify-items: center;
+}
+
+@media (min-width: 1000px) {
+    .photosGrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "p1 p2"
+            "p3 p4";
+        justify-items: center;
+    }
+}
+
+.dogImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.dogImgContainer {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    text-align: center;
+}
+
+figcaption {
+    color:black;
+    background-color: white;
+    margin-bottom: 5px;
+    position: relative;
+}

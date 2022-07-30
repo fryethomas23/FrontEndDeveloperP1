@@ -1,0 +1,44 @@
+p {
+    font-size: 1.2em;
+    white-space: normal;
+    word-break: normal
+}
+
+h3 {
+    font-size: 1.3em;
+    word-break: break-word;
+    word-spacing: normal
+}
+
+strong {
+    white-space: normal;
+    text-transform: capitalize;
+}
+
+i {
+    white-space: normal;
+    opacity: .75;
+    word-break: normal
+}
+
+u {
+    text-transform: uppercase;
+    opacity: .90;
+    word-break: break-word;
+}
+
+a {
+    color: blue;
+    font-weight: 700;
+    caret-color: red;
+}
+
+q {
+    quotes: "‘" "’" "“" "”";
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.box {
+    border: 2px solid red;
+}
